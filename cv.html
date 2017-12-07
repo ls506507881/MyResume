@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人简历-前端工程师-李帅</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.4;
+            font-size: 16px;
+            color: #585858;
+            background: #F2F5F3;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+
+        aside {
+            background: #252626;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 250px;
+            color: #E9E9E9;
+        }
+
+        article.page {
+            background: #F2F5F3;
+            margin-left: 250px;
+        }
+
+        article.page>section{
+            padding: 30px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* 侧边条 */
+        /* .page-wrap>aside>.logo{
+            padding-top: 30px;
+            text-align: center;
+            color: #4BC8C7;
+        } */
+        /* .page-wrap>aside>.logo>svg{
+            width: 80px;
+            height: 80px;
+        } */
+        .page-wrap>aside>.info{
+           text-align: center;
+        }
+        .page-wrap>aside>h2{
+            display: block;
+            text-align: center;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 30px;
+            padding-top: 5px;
+            letter-spacing: 1px;
+            color: #61C191;
+            font-weight: 600;
+            /* color: #4BC8C7; */
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        .page-wrap>aside>.info>h3,h4,p{
+            font-weight: 400;
+        }
+        .page-wrap>aside>.navigation-container{
+
+        }
+        .page-wrap>aside>.navigation-container>.page-nav-ul{
+            margin-top: 50px;
+        }
+        .page-wrap>aside>.navigation-container>.page-nav-ul li{
+            margin-top: 20px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        .page-wrap>aside>.navigation-container>.page-nav-ul li.active{
+            background: #F2F5F3;
+            color: #252626;
+            font-weight: 600;
+        }
+        .page-wrap>aside>.navigation-container>.page-nav-ul li.active a:hover{
+            color: #252626;
+        }
+        .page-wrap>aside>.navigation-container>.page-nav-ul li a{
+            padding-left: 50px;
+            line-height: 45px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .page-wrap>aside>.navigation-container>.page-nav-ul li a small{
+            margin-left: 5px;
+        }
+        .page-wrap>aside>.navigation-container>.page-nav-ul li a:hover{
+            color: #4BC8C7;
+        }
+        
+        .page-wrap>aside>.navigation-container>.footer{
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 250px;
+        }
+        .page-wrap>aside>.navigation-container>.footer>.footer-social{
+            display: flex;
+            justify-content: space-around;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 10px;
+        }
+        .page-wrap>aside>.navigation-container>.footer>.footer-social li{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            opacity: .5;
+            
+        }
+        .page-wrap>aside>.navigation-container>.footer>.footer-social li:hover{
+            opacity: 1;
+            animation: 0.3s ease-in stretchdelay;
+        }
+        @keyframes stretchdelay {
+        20%{
+            transform: scaleY(1.3);
+            -webkit-transform: scaleY(1.2);
+        } 30%,40% {
+            transform: scaleY(1.0);
+            -webkit-transform: scaleY(1.0);
+        } 40% {
+            transform: scaleY(.8);
+            -webkit-transform: scaleY(.8);
+        } 60% {
+            transform: scaleX(1.3);
+            -webkit-transform: scaleX(1.3);
+        } 70% {
+            transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+        } 80% {
+            transform: scaleX(.8);
+            -webkit-transform: scaleX(.8);
+        }
+        100% {
+            transform: scaleX(1.0);
+            -webkit-transform: scaleX(1.0);
+        }
+        }
+        .page-wrap>aside>.navigation-container>.footer>.footer-social li svg{
+            width: 26px;
+            height: 26px;
+            margin-left: 7px;
+            margin-top: 7px;
+        }
+        .page-wrap>aside>.navigation-container>.footer>.footer-social li:nth-child(1){
+            background-color: #5EE069;
+        }
+        .page-wrap>aside>.navigation-container>.footer>.footer-social li:nth-child(2){
+            background-color: #000;
+        }
+        .page-wrap>aside>.navigation-container>.footer>.footer-social li:nth-child(3){
+            background-color: #FDCF2D;
+        }
+        .page-wrap>aside>.navigation-container>.footer>.footer-social li:nth-child(4){
+            background-color: #35B7F4;
+        }
+        .page-wrap>aside>.navigation-container>.footer>.imprint{
+            display: block;
+            font-size: 12px;
+            color: #cecece;
+            text-align: center;
+        }
+        .page>.about-me{
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+        .page>.about-me>.main-info-top{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .page>.about-me>.main-info-top>.avatar{
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+            overflow: hidden;
+        }
+        .page>.about-me>.main-info-top>.avatar img{
+            width: 100%;
+        }
+        .page>.about-me>.main-info-top>.info-box{
+            padding-left: 40px;
+        }
+        .page>.about-me>.main-info-top>.info-box>h2{
+            font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+            font-size: 34px;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #222;
+            letter-spacing: .05em;
+            margin-top: 20px;
+        }
+        .page>.about-me>.main-info-top>.info-box>h2>small{
+            color: #ccc;
+            font-weight: 500;
+            padding-left: 10px;
+        }
+        .page>.about-me>.main-info-top>.info-box>h3{
+            color: #353944;
+            font-weight: 400;
+            letter-spacing: 0;
+            font-size: 20px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        .page>.about-me>.main-info-top>.info-box>h4{
+            color: #222;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 2;
+        }
+        .about-me{
+            display: none;
+        }
+        .portfolio{
+            display: none;
+        }
+        .skills{
+            display: none;
+        }
+        .contact{
+            display: none;
+            height: 100%;
+        }
+        .active{
+            display: block;
+        }
+        .portfolio>h1{
+            font-size: 38px;
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        .skills>h1{
+            font-size: 38px;
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        .contact>h1{
+            font-size: 38px;
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        .contact>.contact-info-wrap{
+            display: flex;
+            justify-content: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .contact>.contact-info-wrap .scan{
+            max-width: 200px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        .contact>.contact-info-wrap .scan img{
+            width: 100%;
+        }
+        .contact>.contact-info-wrap>.contact-info{
+            margin-left: 60px;
+            vertical-align: middle;
+        }
+        .contact>.contact-info-wrap>.contact-info li{
+            line-height: 60px;
+            vertical-align: middle;
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .contact>.contact-info-wrap>.contact-info li svg{
+            width: 60px;
+            height: 60px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        /* 个人 */
+        .main-info-content{
+            margin-bottom: 40px;
+        }
+        .main-info-content>p{
+            line-height: 1.6em;
+            font-weight: 500;
+        }
+        .main-info-content>h3{
+            color: #333;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        .main-info-content strong{
+            color: red;
+        }
+        .why-me p::before{
+            content: "√";
+        }
+    </style>
+    <script src="http://at.alicdn.com/t/font_492486_my2idm86h8ujif6r.js"></script>
+</head>
+
+<body>
+    <div class="page-wrap">
+        <aside>
+            <h2 href="#">LI SHUAI</h2>
+            <div class="info">
+                <h3>WANT JOB</h3>
+                <h4>FRONT-END WEB DEVELOPER</h4>
+                <p>DATE OF BIRTH <span>in Oct.1993</span></p>
+            </div>
+            <div class="navigation-container">
+                <ul class="page-nav-ul">
+                    <li class="page-nav active">
+                        <a>个人
+                            <small>ABOUT ME</small>
+                        </a>
+                    </li>
+                    <li class="page-nav">
+                        <a>项目
+                            <small>PORTFOLIO</small>
+                        </a>
+                    </li>
+                    <li class="page-nav">
+                        <a>技能
+                            <small>SKILLS</small>
+                        </a>
+                    </li>
+                    <li class="page-nav">
+                        <a>联系
+                            <small>CONTACT</small>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer">
+                    <ul class="footer-social">
+                        <li>
+                            <a target="_blank" href="http://www.jianshu.com/u/ed85c156649b"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-blog"></use></svg></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/ls506507881"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github"></use></svg></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="mailto:506507881@qq.com"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-youxiang1"></use></svg></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="tencent://message/?uin=506507881&Site=&Menu-=yes"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq1"></use></svg></a>
+                        </li>
+                    </ul>
+                    <p class="imprint">
+                        Made by li shuai Dec.2017
+                    </p>
+                </div>
+            </div>
+        </aside>
+        <article class="page">
+            <section class="page-info about-me active">
+                <div class="main-info-top">
+                    <div class="avatar">
+                        <img src="https://i.loli.net/2017/12/01/5a20de1265e3d.jpg" alt="">
+                    </div>
+                    <div class="info-box">
+                        <h2>李帅<small>前端开发</small></h2>
+                        <h3>一腔热血的激情 · 一个像素的执着</h3>
+                        <p>出生年月：<span>1993.10</span></p>
+                    </div>
+                </div>
+                <div class="main-info-content why-me">
+                    <h3>这样的我</h3>
+                    <p>我是一个性格坚韧、做事认真的人。</p>
+                    <p>不设边界，碰到新的知识，都愿意去尝试。</p>
+                    <p>有时间概念，能在约定时间内完成任务。</p>
+                    <p>良好的审美，有过设计经历，沟通方便。</p>
+                    <p>喜欢运动，六个月减掉100斤</p>
+                    <p>性格比较容易坚持，不会知难而退，喜欢有挑战的工作环境。</p>
+                    <p>有外包公司经历，对压力有更好的承受力。</p>
+                </div>
+                <div class="main-info-content">
+                    <h3>工作经历</h3>
+                    <h4>2015.4~2016.7 中国网道 设计兼前端</h4>
+                    <p>负责网站交互设计、网站前端界面实现；与甲方交涉、与甲方讨论及分析需求、流程、可行性评估等。</p>
+                    <h4>2016.10~2017.7 上海纳好福利有限公司 网页设计</h4>
+
+                </div>
+                <div class="main-info-content">
+                    <h3>教育背景</h3>
+                    <h4>2012.9~2015.6 山东电子职业技术学院 网站开发技术</h4>
+                </div>
+                <div class="main-info-content">
+                    <h3>校内实践</h3>
+                    <h4>2013.9~2014.9 果果工作室</h4>
+                    工作描述
+                    工作任务：主要是指导老师在社会上接的一些网站外包，负责带领小团队完成指导老师布置的任务，
+                    从网页设计到代码实现。
+                    <span></span>
+                </div>
+            </section>
+            <section class="page-info portfolio">
+                <h1>PORTFOLIO</h1>
+                <ul class="portfolio-list">
+                    <li>
+                        <img src="" alt="图片">
+                        <div class="por-info">
+                            <h1>css实现一个皮卡丘</h1>
+                            <h3>纯粹使用CSS来实现绘制一只矢量皮卡丘。</h3>
+                            <p><span>技术：</span>CSS3</p>
+                            <p><span>实现：</span>主要使用flex布局以及absolute定位。</p>
+                            <p><span>难点：</span>嘴部的大弧度实现</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="图片">
+                        <div class="por-info">
+                            <h1>实现英雄联盟（LOL）桌面端官网</h1>
+                            <h3>这是一个HTML5桌面端的静态页面制作项目，像素级精确还原LOL官网。</h3>
+                            <p><span>技术：</span>CSS3</p>
+                            <p><span>实现：</span>主要使用flex布局以及absolute定位。</p>
+                            <p><span>难点：</span>嘴部的大弧度实现</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="图片">
+                        <div class="por-info">
+                            <h1>网易云音乐移动端应用</h1>
+                            <h3>这是一个非官方的网易云音乐手机端播放页面应用。能够实现曲库列表实时更新、搜索数据请求、歌曲播放、暂停、重新播放等效果。</h3>
+                            <p><span>功能：</span>歌曲播放、歌单实时更新、曲库搜索、歌词滚动</p>
+                            <p><span>部署：</span>LeanCloud + 七牛云</p>
+                            <p><span>技术栈：</span>原生JS + jQuery + Gulp / RequireJS + webpack2.0</p>
+                            <p><span>难点：</span>搜索栏体验和逻辑的优化。后来重新将JS代码进行功能化、模块化重构，不同分支尝试使用Gulp/RequireJS两种方式处理工作流文件，最终使用webpack打包.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="图片">
+                        <div class="por-info">
+                            <h1>express实现一个在线便利贴</h1>
+                            <h3>纯粹使用CSS来实现绘制一只矢量皮卡丘。</h3>
+                            <p><span>技术：</span>CSS3</p>
+                            <p><span>实现：</span>主要使用flex布局以及absolute定位。</p>
+                            <p><span>难点：</span>嘴部的大弧度实现</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="page-info skills">
+                <h1>SKILLS</h1>
+                <div class="skills-content">
+                    <ul class="skills-content-info">
+                        <li>
+                            <h3>静态页面制作技术，熟练掌握HTML5、CSS3</h3>
+                            <p>像素级还原设计稿，可以实现响应式以适应手机屏幕。</p>
+                            <p>CSS 3 动画、Flex 布局、CSS 2 布局</p>
+                        </li>
+                        <li>
+                            <h3>熟练掌握原生JavaScript</h3>
+                            <p>理解概念如：原型、作用域链，闭包、面向对象、异步流程控制等。</p>
+                            <p>能够进行模块化编程，使用Gulp、RequireJS、webpack等多种方式处理工作流</p>
+                            <p>能够对复杂函数进行功能化封装，并编写类似jQuery常用的基本功能性插件</p>
+                            <p>熟悉ES6的部分特性</p>
+                        </li>
+                        <li>
+                            <h3>移动端页面</h3>
+                            <p>熟悉手机端页面的开发流程</p>
+                            <p>能够使用动态 REM 适配所有手机屏幕</p>
+                        </li>
+                    </ul>
+                    <ul class="skills-content-info">
+                        <li>
+                            <h3>能够与后端良好的配合开发</h3>
+                            <p>了解 HTTP 协议，熟悉掌握AJAX请求</p>
+                            <p>了解并运用过两种跨域策略CORS和JSONP</p>
+                            <p>熟悉运用懒加载、预加载等性能优化策略</p>
+                        </li>
+                        <li>
+                            <h3>学习能力强，对于新技术、新方式会尽可能快速掌握</h3>
+                            <p>对算法基础有浓厚兴趣，正在恶补中</p>
+                            <p>未来一年掌握一门后端语言或node</p>
+                        </li>
+                        <li>
+                            <h3>英语读写能力不错</h3>
+                            <p>曾在外企英文环境工作两年以上，能够完全适应全英文工作环境。</p>
+                        </li>
+                        <li>
+                            <h3>热爱优雅、简洁的代码方式</h3>
+                            <p>注重易读性强，不炫技，一切以配合团队工作为主。</p>
+                        </li>
+                    </ul>
+                <!-- linux命令行，vim编译器
+                HTML5、css3  javascript jQuery 
+
+                Git、 GitHub、Markdown、 命令行、 编辑器、 语义化、 标签使用、 Form 表单、 切图、 选择器、 常见样式、 浏览器调试、 盒模型、 浮动、 定位、 边距合并、 负边距、 BFC、 居中、 常见布局、 CSS兼容、 字体图标、 编码规范、 静态页面实战等
+                进阶阶段，18个任务：浏览器渲染机制、运算符优先级、函数声明、 函数表达式、 声明前置、 作用域链、 引用类型、 ES5数组、IIFE 对象拷贝、 字符串/数组/Math/正则、 DOM增删改查、 事件模型(冒泡、捕获、事件代理、取消默认)、 BOM、 闭包、 服务器搭建、 动画、 Ajax(Mock数据)、 跨域、 jQuery DOM操作/属性操作/事件/Ajax、 Promise、日常效果实现
+                高级阶段，10个必修任务和数个可选任务，内容包括：原型、 原型链、 继承、 this、 模块模式、发布订阅模式、Tab组件/轮播组件/曝光组件/事件管理模块封装、BootStrap源码解析、 AMD/CMD/UMD规范、 Require.js/R.js、 Node入门、 NPM使用(开发命令行工具)、 工程化(Gulp、NPM Script)、 WebPack入门、 Less、 Flex布局、 移动端适配、 HTTP头/状态码/缓存处理、 Web安全、 CSS3效果、PostCSS、JQuery源码解析、 JQuery插件编写等 -->
+                <ul class="skill-lists">
+                    <li>HTML/HTML5</li>
+                    <li>CSS/CSS3</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Amaze UI</li>
+                    <li>Less/Sass</li>
+                    <li>PhotoShop</li>
+                    <li>VScode</li>
+                    <li>Sublime</li>
+                    <li>Atom</li>
+                    <li>Git/Github客户端</li>
+                    <li>AMD模块化</li>
+                    <li>FIS3</li>
+                    <li>Gulp</li>
+                    <li>Angular</li>        
+                </ul>
+            </section>
+            <section class="page-info contact">
+                <h1>CONTACT</h1>
+                <div class="contact-info-wrap">
+                    <div class="scan">
+                        <img src="https://i.loli.net/2017/12/02/5a2256539d612.jpg" alt="微信二维码">
+                        <p>我的微信二维码</p>
+                    </div>
+                    <ul class="contact-info">
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-email"></use></svg>
+                            506507881@qq.com
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq"></use></svg>
+                            506507881
+                        </li>
+                        <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-smartphone"></use></svg>
+                            18616520132
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixin"></use></svg>
+                            li_shuai007
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+        $('.page-nav-ul>li').on('click',function(){
+            var $this = $(this)
+            var tabIdx = $this.index()
+            var $page = $('.page')
+            console.log(tabIdx)
+            console.log($page)
+            $this.addClass('active').siblings().removeClass('active')
+            $this.parents('.page-wrap').find('.page-info').eq(tabIdx).addClass('active')
+            .siblings().removeClass('active')
+        })
+    </script>
+</body>
+
+</html>
