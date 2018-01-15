@@ -15,7 +15,7 @@
             <div class="info">
                 <h3>WANT JOB</h3>
                 <h4>FRONT-END WEB DEVELOPER</h4>
-                <p>DATE OF BIRTH : <span> Oct.1993</span></p>
+                <p>DATE OF BIRTH : <span> OCT.1993</span></p>
             </div>
             <div class="navigation-container">
                 <ul class="page-nav-ul">
@@ -73,37 +73,38 @@
                         <p>出生年月：<span>1993.10</span></p>
                     </div>
                 </div>
+
                 <div class="main-info-content why-me">
-                    <h3>这样的我</h3>
+                    <h3 class="title">这样的我 &gt;&gt;</h3>
                     <div class="info">
-                        <p>认真负责,会认真对待每一个项目，不敷衍了事。</p>
-                        <p>不设边界，碰到新的知识，都愿意去尝试，想成为一个包括但不仅限于前端的程序猿。</p>
-                        <p>有时间概念，能在约定时间内完成任务。</p>
-                        <p>有设计工作经历，良好的审美，与设计交流方便。</p>
-                        <p>喜欢运动,喜欢跑步,身体健康</p>
-                        <p>性格容易坚持，喜欢有挑战的工作环境。</p>
-                        <p>有外包公司经历，对压力有更好的承受力。</p>
+                        <p>● <strong>认真负责</strong>,会认真对待每一个项目，不敷衍了事。</p>
+                        <p>● <strong>有时间概念</strong>，能在约定时间内完成任务。</p>
+                        <p>● 熟悉交互设计，pc、移动端界面设计，<strong>良好的审美</strong>，与设计交流方便。</p>
+                        <p>● 喜欢运动，喜欢跑步，<strong>壮汉一枚</strong>，哈哈哈哈。</p>
+                        <p>● 能长时间专注坚持一件事，喜欢有挑战的工作环境。</p>
+                        <p>● 有外包公司经历，<strong>对压力有更好的承受力。</strong></p>
+                        <p>● 不设边界，碰到新的知识，都愿意去尝试，想成为一个<strong>包括但不仅限于前端</strong>的程序猿。</p>
                     </div>
                 </div>
                 <div class="main-info-content">
-                    <h3>工作经历</h3>
+                    <h3 class="title">工作经历 &gt;&gt;</h3>
                     <div class="info">
-                        <h4>2015.4~2016.7 中国网道 设计兼前端</h4>
+                        <h4>● 2015.4~2016.7 中国网道 设计兼前端</h4>
                         <p>负责网站交互设计、网站前端界面实现；与甲方交涉、与甲方讨论及分析需求、流程、可行性评估等。</p>
-                        <h4>2016.10~2017.7 上海纳好福利有限公司 网页设计</h4>
-                        <p>负责网页设计、设计主推产品banner，商品详情等</p>
+                        <h4>● 2016.10~2017.7 上海纳好福利有限公司 网页设计</h4>
+                        <p>负责网页设计、网站界面美化，产品banner，商品详情等</p>
                     </div>
                 </div>
                 <div class="main-info-content">
-                    <h3>教育背景</h3>
+                    <h3 class="title">教育背景 &gt;&gt;</h3>
                     <div class="info">
-                        <h4>2012.9~2015.6 山东电子职业技术学院 网站开发技术</h4>
+                        <h4>● 2012.9~2015.6 山东电子职业技术学院 网站开发技术</h4>
                     </div>
                 </div>
                 <div class="main-info-content">
-                    <h3>校内实践</h3>
+                    <h3 class="title">校内实践 &gt;&gt;</h3>
                     <div class="info">
-                        <h4>2013.9~2014.9 果果工作室 学生负责人</h4>
+                        <h4>● 2013.9~2014.9 果果工作室 学生负责人</h4>
                         <p>工作任务：带领12人小团队，专业课老师指导，负责企业站设计和代码实现。</p>
                     </div>
                 </div>
@@ -162,6 +163,21 @@
                         <img src="./image/node.jpg" alt="图片">
                         <div class="por-info">
                             <h1>express实现一个在线便利贴</h1>
+                            <h3>纯粹使用CSS来实现绘制一只矢量皮卡丘。</h3>
+                            <p><span>技术：</span>CSS3</p>
+                            <p><span>实现：</span>主要使用flex布局以及absolute定位。</p>
+                            <p><span>难点：</span>嘴部的大弧度实现</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">blog</a>
+                                <a target="_blank" href="#">gitHub</a>
+                                <a target="_blank" href="#">预览</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./image/node.jpg" alt="图片">
+                        <div class="por-info">
+                            <h1>VUE实现一个在线简历编辑器</h1>
                             <h3>纯粹使用CSS来实现绘制一只矢量皮卡丘。</h3>
                             <p><span>技术：</span>CSS3</p>
                             <p><span>实现：</span>主要使用flex布局以及absolute定位。</p>
@@ -283,8 +299,6 @@
             var $this = $(this)
             var tabIdx = $this.index()
             var $page = $('.page')
-            console.log(tabIdx)
-            console.log($page)
             $this.addClass('active').siblings().removeClass('active')
             $this.parents('.page-wrap').find('.page-info').eq(tabIdx).addClass('active')
             .siblings().removeClass('active')
