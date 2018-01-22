@@ -68,7 +68,7 @@ article.page>section{
 .page-wrap>aside>.navigation-container>.page-nav-ul li a{
     padding-left: 50px;
     line-height: 45px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 .page-wrap>aside>.navigation-container>.page-nav-ul li a small{
@@ -322,9 +322,10 @@ section{
     margin-bottom: 30px;
 }
 .skills>.skills-content{
-    background: #fff;
+    background: #fefefe;
+    border-radius: 5px;
     display: flex;
-    max-width: 960px;
+    max-width: 860px;
     margin: 0 auto;
     justify-content: space-between;
     /* background: rgba(255, 255, 255, .5); */
@@ -332,8 +333,8 @@ section{
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
 }
 .skills>.skills-content>.skills-content-info{
-    margin: 20px 20px 20px 20px;
-    max-width: 380px;
+    margin: 20px 40px 20px 40px;
+    /* max-width: 380px; */
 }
 .skills>.skills-content>.skills-content-info>li{
     margin-bottom: 20px;
@@ -403,29 +404,30 @@ section{
 .main-info-content{
     max-width: 800px;
     margin: 0 auto 30px;
+
 }
 .main-info-content > .title{
-    display: inline-block;
+    /* display: inline-block; */
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #252626;
 }
 .main-info-content > .info{
     letter-spacing:1px;
     padding-left: 10px;
-    margin-top: 15px;
+    margin-top: 8px;
     margin-bottom: 15px;
 }
 .main-info-content > .info > p{
-    font-size: 17px;
+    font-size: 16px;
 }
 .main-info-content > .info h4{
     font-weight: 600;
     color: #555;
-    font-size: 19px;
-    margin-top: 8px;
-    line-height: 36px;
+    font-size: 17px;
+    margin-top: 4px;
+    line-height: 26px;
 }
 .main-info-content > .info > p{
     line-height: 1.6em;
@@ -433,7 +435,7 @@ section{
 }
 .main-info-content>h3{
     color: #333;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
     margin-bottom: 8px;
 }
