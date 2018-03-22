@@ -2,8 +2,8 @@
 - 李帅/男/1993-10
 - 山东电子职业技术学院（网站开发技术）
 - 工作年限：2年
-- 技术博客：http://www.jianshu.com/u/ed85c156649b
-- 简历网站：https://ls506507881.github.io/MyResume
+- 技术博客：[http://www.jianshu.com/u/ed85c156649b]
+- 简历网站：[https://ls506507881.github.io/MyResume]
 
 ---
 ### 求职意向
